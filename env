@@ -1,0 +1,13 @@
+!#/bin/ksh
+# please replace the values to reflect your installation
+
+SQLCONNECT="uid#dba;pwd#sql;eng#myeng;dbn#mydb"
+export SQLCONNECT
+
+IQMSG="/path/to/iqmsg/file"
+export IQMSG
+
+alias iq="dbisql -nogui"
+alias iqc="dbisqlc"
+alias cddb="cd /path/to/db/file"
+alias iqmsg="less ${IQMSG}"
